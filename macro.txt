@@ -1,0 +1,15 @@
+macro
+incr &arg1 , &arg2 , &arg3
+move &arg2 , &arg1 
+add &arg3 , &arg2
+mend
+macro
+decr &r1 , &r2
+add &r1 , &r2
+mend
+start
+ read data1
+ read data2
+ read data3
+ incr data1,data2,data3
+end
